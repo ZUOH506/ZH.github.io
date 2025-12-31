@@ -1,4 +1,4 @@
-<style>
+ <style>
         /* ...existing code... */
         /* 移动端优化 */
         @media (max-width: 700px) {
@@ -1263,6 +1263,13 @@
                     activeLink = link;
                     moveBlobTo(link);
                     showBlob();
+                    // 移动端：点击后自动关闭菜单
+                    var navLinks = document.getElementById('nav-links');
+                    var navToggle = document.getElementById('nav-toggle');
+                    if (window.innerWidth <= 700 && navLinks && navLinks.classList.contains('open')) {
+                        navLinks.classList.remove('open');
+                        if(navToggle) navToggle.setAttribute('aria-expanded', 'false');
+                    }
                 });
                 link.addEventListener('keydown', (ev) => {
                     if (ev.key === 'ArrowRight') {
