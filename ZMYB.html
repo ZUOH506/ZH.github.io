@@ -1,3 +1,81 @@
+<style>
+        /* ...existing code... */
+        /* 移动端优化 */
+        @media (max-width: 700px) {
+            body {
+                font-size: 15px;
+                padding: 0;
+            }
+            nav {
+                font-size: 1em;
+                padding: 0 2vw;
+                min-height: 48px;
+            }
+            .nav-inner {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .nav-links {
+                gap: 2px;
+                padding: 6px 0;
+            }
+            .nav-links a {
+                padding: 10px 0;
+                font-size: 1.08em;
+            }
+            header {
+                padding: 36px 0 18px 0;
+                border-radius: 0 0 18px 18px;
+                text-align: center;
+            }
+            main {
+                padding: 16px 2vw;
+                border-radius: 14px;
+                box-shadow: none;
+            }
+            .fluid-photo-list {
+                gap: 10px;
+            }
+            .fluid-photo {
+                min-width: 70vw;
+                max-width: 98vw;
+                margin: 0 auto;
+                border-radius: 12px;
+            }
+            .photo-caption {
+                font-size: 0.98em;
+                left: 6px; right: 6px; bottom: 6px;
+                padding: 6px 8px;
+                border-radius: 8px;
+            }
+            .notice-text {
+                font-size: 1em;
+                padding: 8px 10px;
+                border-radius: 8px;
+            }
+            footer {
+                flex-direction: column;
+                gap: 6px;
+                font-size: 0.98em;
+                padding: 10px 2vw;
+                border-radius: 0 0 10px 10px;
+            }
+            .socials a {
+                width: 30px; height: 30px; font-size: 1.1em;
+            }
+            .cta, .ios-glass-btn {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+            .lb-controls button, .theme-toggle, .nav-toggle, .nav-scroll-btn {
+                min-width: 32px; min-height: 32px; font-size: 1em;
+            }
+            #nav-blob {
+                height: 36px !important;
+                top: 4px !important;
+            }
+        }
+    </style>
 <!DOCTYPE html><html lang="zh-cn"><head>
     <meta charset="UTF-8">
     <title>追梦一班</title>
@@ -943,8 +1021,6 @@
     <footer>
         <span>© 2025 追梦一班. 保留所有权利.</span>
         <span class="socials" aria-hidden="false">
-            <a href="#" title="联系我们" aria-label="联系我们">✉️</a>
-            <a href="#" title="班级群" aria-label="班级群">💬</a>
         </span>
     </footer>
     <!-- 灯箱（lightbox） -->
