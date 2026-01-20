@@ -1,0 +1,83 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "email": "admin@example.com",
+            "password": "$2y$10$TQz3nL2nJvH5X7yZ9wB5eO8iU2oP5aQ8sD4fG7hJ1kL3mN6pR9tV",
+            "role": "admin",
+            "created_at": "2026-01-20 00:00:00",
+            "updated_at": "2026-01-20 00:00:00"
+        },
+        {
+            "username": "ZuoH",
+            "email": "1617324812@QQ.COM",
+            "password": "$2y$12$UkJar2uu83m2pk5icJ3p1uWb7HtfT431eFNtPu93gc8cWFpWAQJ4m",
+            "role": "user",
+            "id": 2,
+            "created_at": "2026-01-20 12:47:19",
+            "updated_at": "2026-01-20 12:47:19"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "一般讨论",
+            "description": "讨论各种话题",
+            "created_at": "2026-01-20 00:00:00",
+            "updated_at": "2026-01-20 00:00:00"
+        },
+        {
+            "id": 2,
+            "name": "技术交流",
+            "description": "分享技术经验",
+            "created_at": "2026-01-20 00:00:00",
+            "updated_at": "2026-01-20 00:00:00"
+        },
+        {
+            "id": 3,
+            "name": "资源分享",
+            "description": "分享各种资源",
+            "created_at": "2026-01-20 00:00:00",
+            "updated_at": "2026-01-20 00:00:00"
+        },
+        {
+            "id": 4,
+            "name": "反馈建议",
+            "description": "提供论坛建议",
+            "created_at": "2026-01-20 00:00:00",
+            "updated_at": "2026-01-20 00:00:00"
+        }
+    ],
+    "posts": [
+        {
+            "title": "测试帖子",
+            "content": "这是一个测试帖子，用于验证论坛功能是否正常工作。",
+            "user_id": 1,
+            "category_id": 1,
+            "id": 1,
+            "view_count": 0,
+            "created_at": "2026-01-20 12:43:39",
+            "updated_at": "2026-01-20 12:43:39"
+        }
+    ],
+    "replies": [
+        {
+            "content": "这是一个测试回复，用于验证回复功能是否正常工作。",
+            "post_id": 1,
+            "user_id": 1,
+            "id": 1,
+            "created_at": "2026-01-20 12:43:39",
+            "updated_at": "2026-01-20 12:43:39"
+        }
+    ],
+    "likes": [
+        {
+            "id": 1,
+            "post_id": 1,
+            "reply_id": null,
+            "user_id": 1,
+            "created_at": "2026-01-20 12:43:39"
+        }
+    ]
+}
